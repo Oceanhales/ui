@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Screens/EmployeeTabControler.dart';
 import 'package:flutter_app/UI Resorce/category_card.dart';
 import 'package:flutter_app/UI Resorce/colors.dart';
 
@@ -93,30 +94,43 @@ class HomeScreen extends StatelessWidget {
                         CategoryCard(
                           title: "Attendence",
                           svgSrc: "assets/images/in.png",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => EmployeeTabControler(),),
+                          );
+                            },
                         ),
                         CategoryCard(
                           title: "Task",
                           svgSrc: "assets/images/Task.png",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => EmployeeTabControler(),),
+                            );
+                          },
                         ),
                         CategoryCard(
                           title: "Profile",
                           svgSrc: "assets/images/profile.png",
 
-                          //press: () {
-                          //   Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(builder: (context) {
-                          //       //return DetailsScreen();
-                          //     }),
-                          //   );
-                          // },
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => EmployeeTabControler(),),
+                            );
+                          },
                         ),
                         CategoryCard(
                           title: "Settings",
                           svgSrc: "assets/images/settings.png",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => EmployeeTabControler(),),
+                            );
+                          },
                         ),
                       ],
                     ),

@@ -26,6 +26,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "bubble_tab_indicator",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/bubble_tab_indicator-0.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "1.23"
+    },
+    {
       "name": "charcode",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.1.2",
       "packageUri": "lib/",
@@ -206,7 +212,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-08-26T21:11:22.622126Z",
+  "generated": "2020-09-01T16:14:54.532078Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }
