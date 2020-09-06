@@ -3,10 +3,12 @@ import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 //import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/Screens/Attendence.dart';
+import 'package:flutter_app/Screens/Progress.dart';
 import 'package:flutter_app/Screens/Profile.dart';
-import 'package:flutter_app/Screens/settings.dart';
-import 'package:flutter_app/Screens/task.dart';
+import 'package:flutter_app/Screens/Profile.dart';
+import 'package:flutter_app/Screens/Settings.dart';
+import 'package:flutter_app/Screens/Task.dart';
+import 'package:flutter_app/Screens/Workplace.dart';
 import 'package:flutter_app/UI%20Resorce/colors.dart';
 //import 'package:driving_test_scheduler/screens/default_available_test_times.dart';
 //import 'package:driving_test_scheduler/screens/second_available_test_time.dart';
@@ -51,10 +53,10 @@ class _EmployeeTabControlerState extends State<EmployeeTabControler>with SingleT
     //new Tab(text: TestCentur.toString(),),
 
 
-    new Tab(text: "Attendance"),
+    new Tab(text: "Workplace"),
+    new Tab(text: "Progress"),
     new Tab(text: "Task"),
     new Tab(text: "Profile"),
-    new Tab(text: "Settings"),
     new Tab(text: "Settings"),
 
   ];
@@ -94,11 +96,13 @@ class _EmployeeTabControlerState extends State<EmployeeTabControler>with SingleT
           controller: _tabController,
           children: <Widget>[
 
-            Attendence(),
+            Workplace(),
+            Progress(),
             Task(),
             Profile(),
             Settings(),
-            Settings()
+
+
 
           ],
         )
